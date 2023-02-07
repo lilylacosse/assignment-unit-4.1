@@ -110,8 +110,20 @@ console.log('The sum of the class vote came to:', sumAll(classVote));
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 function allPositive(array) {
-  
+  let newArray = [];
+  for (i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      newArray.push(array[i])
+    }
+  }
+  return newArray
 }
+
+let arrayOne = [1, -2, -3, 8, 4, 6, -9];
+let arrayTwo = [-1, -2, -6, -5, -8, -9];
+
+console.log(allPositive(arrayOne));
+console.log(allPositive(arrayTwo));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
