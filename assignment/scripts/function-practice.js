@@ -126,10 +126,22 @@ function allPositive(array) {
 let arrayOne = [1, -2, -3, 8, 4, 6, -9];
 let arrayTwo = [-1, -2, -6, -5, -8, -9];
 
-console.log(allPositive(arrayOne));
-console.log(allPositive(arrayTwo));
+console.log('Test allPositive (expect positive array):', allPositive(arrayOne));
+console.log('Test allPositive (expect empty array):', allPositive(arrayTwo));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+// My challenge to write a function that returns the area of a    triangle using the base and height of the triangle as inputs. 
+
+function triangleArea(base, height) {
+  let area = (base * height) / 2;
+  return area;
+}
+
+console.log('Triangle area, base=2, height=10 (expect 10):', triangleArea(2, 10));
+
+console.log('Triangle area, base=18, height=30 (expect 270):',triangleArea(18,30));
+ 
